@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rendering Dynamic Images Using Flask</title>
+</head>
+<body>
+<form action="{{ url_for('inverse') }}" enctype="multipart/form-data" method="POST">
+    <input type="submit" value="inverse"/>
+</form>
+<form action="{{ url_for('gamma') }}" enctype="multipart/form-data" method="POST">
+    <input type="submit" value="gamma"/>
+</form>
+<form action="{{ url_for('log') }}" enctype="multipart/form-data" method="POST">
+    <input type="submit" value="log"/>
+</form>
+<form action="{{ url_for('histogram') }}" enctype="multipart/form-data" method="POST">
+    <input type="submit" value="histogram"/>
+</form>
+<form action="{{ url_for('contrast') }}" enctype="multipart/form-data" method="POST">
+    <input type="submit" value="contrast"/>
+</form>
+<form action="{{ url_for('fast_fourier') }}" enctype="multipart/form-data" method="POST">
+    <input type="submit" value="fast_fourier"/>
+</form>
+<form action="{{ url_for('butterworth_lowpass') }}" enctype="multipart/form-data" method="POST">
+    <input type="submit" value="butterworth_lowpass"/>
+</form>
+<form action="{{ url_for('butterworth_highpass') }}" enctype="multipart/form-data" method="POST">
+    <input type="submit" value="butterworth_highpass"/>
+</form>
+<form action="{{ url_for('random_method_1') }}" enctype="multipart/form-data" method="POST">
+    <input type="submit" value="random_method_1"/>
+</form>
+<form action="{{ url_for('random_method_2') }}" enctype="multipart/form-data" method="POST">
+    <input type="submit" value="random_method_2"/>
+</form>
+</form>

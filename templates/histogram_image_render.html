@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rendering Dynamic Images Using Flask</title>
+</head>
+<body>
+{% if method %}
+<h1>{{method}}</h1>
+{% endif %}
+{% if img1 %}
+<h1>Rendered Image</h1>
+<img src="{{img1}}">
+<img src="{{img2}}">
+<img src="{{img3}}">
+{% else %}
+<h1>Image will be render here...</h1>
+{% endif %}
+</body>
+</html>
